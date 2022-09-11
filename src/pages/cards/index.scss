@@ -1,0 +1,27 @@
+.cards {
+  &::after {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(140deg, var(--color-tint-0), var(--color-tint-1));
+    content: "";
+    transition: background-image 0.2s;
+  }
+
+  &-container {
+    display: flex;
+  }
+
+  .buttons-wrapper {
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+
+    --background-color: var(--color-background-0);
+  }
+}

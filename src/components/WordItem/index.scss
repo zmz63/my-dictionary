@@ -1,0 +1,60 @@
+.word-item {
+  position: relative;
+  height: 72px;
+  padding-left: 10px;
+
+  &::before {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 72px;
+    content: "";
+  }
+
+  .check-icon {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    right: 10px;
+    translate: 0 -50%;
+  }
+
+  .tag {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 10px;
+    color: var(--color-primary);
+    font-size: 24px;
+  }
+
+  .item {
+    padding-right: 10px;
+    border-bottom: 1px solid var(--color-border);
+
+    .word {
+      padding-top: 10px;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .translation {
+      display: flex;
+      overflow: hidden;
+      height: 40px;
+      align-items: center;
+      color: var(--color-text-1);
+      text-overflow: ellipsis;
+      white-space: nowrap;
+
+      .line {
+        width: 100px;
+        height: 10px;
+        background-color: var(--color-background-1);
+        border-radius: 4px;
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.phonogram-item {
+  position: relative;
+  display: flex;
+  height: 32px;
+  align-items: center;
+  padding: 0 10px;
+  margin: 0 4px;
+  background-color: transparent;
+
+  .text {
+    color: var(--color-text-0);
+    font-weight: 600;
+  }
+
+  .phonogram {
+    padding: 0 5px;
+    color: var(--color-text-1);
+  }
+
+  .voice {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-primary);
+    border-radius: 15px;
+    color: var(--color-white);
+    font-size: 22px;
+  }
+}

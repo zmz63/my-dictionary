@@ -1,0 +1,181 @@
+.result {
+  &-container {
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0 20px;
+    padding-bottom: 80px;
+    overflow-y: auto;
+
+    .title {
+      position: relative;
+      display: inline-block;
+      padding-bottom: 15px;
+      font-size: 18px;
+      font-weight: 600;
+
+      &::after {
+        position: absolute;
+        bottom: 8px;
+        left: 0;
+        width: 100%;
+        border-bottom: 4px solid var(--color-primary);
+        content: "";
+      }
+    }
+
+    .fixed {
+      position: fixed;
+      right: 30px;
+      bottom: 30px;
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+    }
+  }
+
+  &-header {
+    .keyword {
+      padding-top: 5px;
+      padding-bottom: 20px;
+      font-size: 32px;
+      font-weight: 600;
+    }
+  }
+
+  &-phonogram {
+    display: flex;
+    padding-bottom: 15px;
+  }
+
+  &-paraphrase {
+    .translation-list {
+      > li {
+        padding-bottom: 10px;
+        font-weight: 600;
+      }
+    }
+
+    .word-list {
+      > li {
+        .text {
+          padding-bottom: 5px;
+          font-size: 16px;
+          font-weight: 600;
+        }
+
+        .translation {
+          padding-bottom: 10px;
+          padding-left: 5px;
+        }
+      }
+    }
+
+    .exam-list {
+      padding: 10px 0;
+
+      > li {
+        display: inline-block;
+        padding-right: 5px;
+      }
+    }
+
+    .word-form-list {
+      padding: 10px 0;
+
+      > li {
+        display: flex;
+        height: 24px;
+        align-items: center;
+
+        .wordform {
+          padding-right: 5px;
+        }
+
+        .word {
+          font-size: 16px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  &-sentences {
+    .sentence-list {
+      > li {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10px;
+
+        .sentence {
+          padding: 5px 0;
+          font-size: 16px;
+
+          b {
+            color: var(--color-primary);
+          }
+        }
+
+        .translation {
+          padding: 5px;
+          color: var(--color-text-1);
+        }
+
+        .source {
+          align-self: flex-end;
+          padding: 5px;
+          color: var(--color-text-2);
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  &-synonyms {
+    .synonym-list {
+      > li {
+        display: flex;
+        padding-bottom: 10px;
+
+        .pos {
+          width: 40px;
+          font-size: 16px;
+          font-weight: 600;
+        }
+
+        .synonyms-wrapper {
+          flex: 1;
+        }
+
+        .translation {
+          padding-bottom: 5px;
+        }
+      }
+    }
+
+    .word-list {
+      font-size: 16px;
+
+      > li {
+        display: inline-block;
+        padding-right: 5px;
+      }
+    }
+  }
+
+  &-phrases {
+    .phrase-list {
+      > li {
+        padding-bottom: 10px;
+
+        .phrase {
+          padding-bottom: 5px;
+          font-size: 16px;
+        }
+
+        .translation {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

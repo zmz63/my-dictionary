@@ -1,0 +1,35 @@
+.create {
+  &-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+
+    .title {
+      padding: 20px 0;
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .input-box {
+      --font-size: 16px;
+
+      height: 20px;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--color-black);
+      margin: 5px 0;
+
+      .antd-mobile-icon {
+        font-size: 20px;
+      }
+    }
+
+    .length {
+      align-self: flex-end;
+    }
+
+    .check-box {
+      padding: 20px 0;
+      color: var(--color-text-1);
+    }
+  }
+}

@@ -1,0 +1,60 @@
+.search {
+  &-container {
+    padding: 0 20px;
+
+    .search-box {
+      --font-size: 24px;
+
+      padding: 5px 0;
+      border-bottom: 1px solid var(--color-black);
+
+      .antd-mobile-icon {
+        font-size: 20px;
+      }
+    }
+
+    .fixed {
+      position: fixed;
+      right: 30px;
+      bottom: 30px;
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+    }
+
+    .history-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 0;
+      font-size: 18px;
+      font-weight: 600;
+
+      svg {
+        color: var(--color-text-1);
+        font-size: 24px;
+      }
+    }
+  }
+
+  &-list {
+    > li {
+      overflow: hidden;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 8px 4px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+
+      .entry {
+        font-size: 16px;
+        font-weight: 600;
+      }
+
+      .explain {
+        padding-left: 10px;
+        color: var(--color-text-1);
+      }
+    }
+  }
+}
