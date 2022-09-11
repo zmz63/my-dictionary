@@ -11,7 +11,7 @@
 ## 链接
 
 - [在线预览](http://1.12.66.214/)
-- [后台](https://github.com/zmz63/my-dictionary-serve)
+- [后台](https://github.com/zmz63/my-dictionary-server)
 
 ## 运行
 
